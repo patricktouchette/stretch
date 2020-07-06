@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Tricep Stretch - Right" },
+  { "id": 2, "name": "Tricep Stretch - Left" },
+  { "id": 3, "name": "Bicep Stretch on the wall - Right" },
+  { "id": 4, "name": "Bicep Stretch on the wall - Left" },
+  { "id": 5, "name": "Wrist Extensor Stretch - Right" },
+  { "id": 6, "name": "Wrist Extensor Stretch - Left" },
+  { "id": 7, "name": "Wrist Flexor Stretch - Right" },
+  { "id": 8, "name": "Wrist Flexor Stretch - Left" }
+]
