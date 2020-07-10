@@ -1,5 +1,59 @@
+:root {
+  /* colors */
+  --primary: #219308;
+  --primary2: #4fba34;
+  --secondary: #1a7107;
+  --light: #f7fbf6;
+  --dark: #472116;
+  --accent: #a14422;
+  --accent2: #b6c79f;
+  --accent3: #b6ad6c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 5px solid var(--primary);
+  background: var(--light);
+  color: var(--dark);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0 2rem;
+}
+
+.app {
+  min-height: calc(100vh - 10px);
+  display: grid;
+  align-items: start;
+  /* align-content: center; */
+}
+
+.app header {
+  background: var(--primary2);
+  color: var(--light);
+  box-shadow: 0 5px 20px -10px var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.app .header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.app footer {
+  color: var(--accent2);
+  text-align: center;
+  align-self: end;
 }
 
 .highlight {

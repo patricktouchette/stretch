@@ -1,0 +1,22 @@
+.timer {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.timer-countdown-container {
+  border: 2px solid var(--secondary);
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2);
+  background: white;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-countdown {
+  font-size: 3rem;
+  color: var(--primary);
+}
