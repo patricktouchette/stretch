@@ -1,0 +1,25 @@
+.moves-list__title {
+  margin-bottom: 1.25rem;
+}
+
+.moves-list__list {
+  list-style: none;
+}
+
+.moves-list__item {
+  padding: 0.55rem 0.25rem;
+  line-height: 1.5;
+  border-bottom: 0.1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.moves-list__item:last-of-type {
+  border-bottom: none;
+}
+
+.moves-list__button {
+  margin: 1.5rem 0;
+}
+
+.highlight {
+  background: var(--accent2);
+}

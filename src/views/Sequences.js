@@ -1,4 +1,5 @@
 import React from 'react';
+import './sequences.css';
 
 const Sequences = ({ data, setSequenceId }) => {
   return (
@@ -12,12 +13,7 @@ const Sequences = ({ data, setSequenceId }) => {
           <div
             key={i}
             onClick={() => setSequenceId(i)}
-            style={{
-              cursor: 'pointer',
-              background: 'lightgrey',
-              padding: '1rem',
-              margin: '1rem 0',
-            }}
+            className="sequence-card"
           >
             <h2>{seq.name}</h2>
             <p>

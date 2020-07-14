@@ -1,7 +1,8 @@
 .timer {
   display: grid;
   justify-content: center;
-  gap: 1rem;
+  justify-items: center;
+  gap: 1.5rem;
 }
 
 .timer-countdown-container {
@@ -19,4 +20,10 @@
 .timer-countdown {
   font-size: 3rem;
   color: var(--primary);
+}
+
+.timer-buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
