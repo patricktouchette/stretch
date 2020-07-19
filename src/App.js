@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 // Data
-import sequences from './sequences.json';
-import movesList from './moves.json';
+import sequences from './data/sequences.json';
+import movesList from './data/moves.json';
 // Hooks
 import useTimer from './hooks/useTimer';
 // Views
@@ -10,23 +10,28 @@ import MovesList from './views/MovesList';
 import Sequences from './views/Sequences';
 import Countdown from './views/Countdown';
 import About from './views/About';
+import Header from './components/Header';
 
 const App = () => {
+  // State
   const duration = 35;
   const [sequenceId, setSequenceId] = useState();
   const [showMoves, setShowMoves] = useState(false);
-  const [showAbout, setShowAbout] = useState(true);
+  const [showAbout, setShowAbout] = useState(false);
 
+  // Create the moves hash table
   const moves = movesList.reduce((obj, d) => {
     obj[d.id] = d;
     return obj;
   }, {});
 
+  // Accessor function to get the sequence array
   const sequence = () => {
     if (sequenceId === undefined) return [];
     return sequences[sequenceId].sequence;
   };
 
+  // Get the timer state
   const state = useTimer({ sequence, duration });
   const { timer, move, changeMove, buttonHandlers, isDone } = state;
 
@@ -62,36 +67,32 @@ const App = () => {
     return views.countdown;
   };
 
+  const handleHomeClick = () => {
+    buttonHandlers.reset();
+    setSequenceId(undefined);
+    setShowAbout(false);
+    setShowMoves(false);
+  };
+
+  const handleAboutClick = () => {
+    buttonHandlers.stop();
+    setShowAbout(true);
+  };
+
   return (
     <div className="app">
-      <header>
-        <div className="header-container container">
-          <h4
-            style={{ cursor: 'pointer' }}
-            onClick={() => {
-              buttonHandlers.reset();
-              setSequenceId(undefined);
-              setShowAbout(false);
-            }}
-          >
-            Stretch<span style={{ color: 'var(--secondary)' }}>App</span>
-          </h4>
-          <p
-            style={{ cursor: 'pointer' }}
-            onClick={() => {
-              buttonHandlers.stop();
-              setShowAbout(true);
-            }}
-          >
-            About
-          </p>
-        </div>
-      </header>
+      <Header
+        handleHomeClick={handleHomeClick}
+        handleAboutClick={handleAboutClick}
+      />
 
       <div className="container">{showView()}</div>
 
       <footer>
-        <small>&copy; 2020 Patrick Touchette</small>
+        <small>
+          &copy; 2020{' '}
+          <a href="https://patricktouchette.com">Patrick Touchette</a>
+        </small>
       </footer>
     </div>
   );

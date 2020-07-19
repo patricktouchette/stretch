@@ -1,0 +1,32 @@
+[
+  { "id": 0, "name": "Break" },
+
+  { "id": 1, "name": "Tricep Stretch - Right" },
+  { "id": 2, "name": "Tricep Stretch - Left" },
+  { "id": 3, "name": "Bicep Stretch on the wall - Right" },
+  { "id": 4, "name": "Bicep Stretch on the wall - Left" },
+  { "id": 5, "name": "Wrist Extensor Stretch - Right" },
+  { "id": 6, "name": "Wrist Extensor Stretch - Left" },
+  { "id": 7, "name": "Wrist Flexor Stretch - Right" },
+  { "id": 8, "name": "Wrist Flexor Stretch - Left" },
+  { "id": 9, "name": "Neck Stretch - Left" },
+  { "id": 10, "name": "Neck Stretch - Right" },
+  { "id": 11, "name": "Child's Pose" },
+
+  { "id": 12, "name": "Fist: Open, Fist, Table, Claw, Half-fist, Fist" },
+  { "id": 13, "name": "Pull Fingers Back" },
+  { "id": 14, "name": "Thumb Blocking Exercise" },
+  { "id": 15, "name": "Piano Fingers on Thumb, then open fist" },
+  { "id": 16, "name": "Open/Close hand side ways" },
+  { "id": 17, "name": "Arms out, wrist up, wrist down" },
+  { "id": 18, "name": "Arms out, around the world" },
+  { "id": 19, "name": "Shake hands, shake fingers" },
+  { "id": 20, "name": "Massage hands with thumb" },
+
+  { "id": 21, "name": "Look Up, Look Down (10x)" },
+  { "id": 22, "name": "Look Down, hold 10s, then Look down, Look neutral" },
+  { "id": 23, "name": "Look Up, hold 10s, then Look Up, Look neutral" },
+  { "id": 24, "name": "Look Left, Look Right" },
+  { "id": 25, "name": "Look in circles. Both directions" },
+  { "id": 26, "name": "Gently push eyes, close eyes and squeeze" }
+]

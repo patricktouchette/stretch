@@ -13,7 +13,21 @@
   color: white;
 }
 
-.sequence-card p {
-  margin-top: 1rem;
+.sequence-card:hover p {
+  color: white;
+  transition: color 0.3s;
+}
+
+.sequence-card .title {
+  margin-bottom: 0.5rem;
+}
+
+.sequence-card .author {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.sequence-card .time {
   color: var(--accent);
+  font-weight: bold;
 }

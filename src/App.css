@@ -35,24 +35,14 @@ body {
   align-items: start;
 }
 
-.app header {
-  background: var(--primary2);
-  color: var(--light);
-  box-shadow: 0 5px 20px -10px var(--secondary);
-  margin-bottom: 1rem;
-}
-
-.app .header-container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .app footer {
   color: var(--accent2);
   text-align: center;
   align-self: end;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.app footer a {
+  color: var(--accent2);
 }

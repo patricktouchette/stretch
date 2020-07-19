@@ -15,8 +15,9 @@ const Sequences = ({ data, setSequenceId }) => {
             onClick={() => setSequenceId(i)}
             className="sequence-card"
           >
-            <h2>{seq.name}</h2>
-            <p>
+            <h2 className="title">{seq.name}</h2>
+            <p className="author">{seq.author}</p>
+            <p className="time">
               <span role="img" aria-label="clock">
                 ⌚
               </span>{' '}

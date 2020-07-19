@@ -1,0 +1,18 @@
+.app header {
+  background: var(--primary2);
+  color: var(--light);
+  box-shadow: 0 5px 20px -10px var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.app header h4,
+.app header p {
+  cursor: pointer;
+}
+
+.app .header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
